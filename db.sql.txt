@@ -1,0 +1,30 @@
+create table users(
+userid int primary key,
+name varchar(30),
+email varchar(30),
+password varchar(30),
+foreign key fk_uid(userid) references admin(userid);
+foreign key fk_uid(userid) references transaction(transid);
+);
+
+
+create table admin(
+	adminid int primary key,
+	userid int,
+	status varchar(30),
+	project_desc varchar(30)
+);
+
+create table transaction(
+	transid int primary key,
+	trans_status varchar(30),
+	trans_receipt varchar(30)
+);
+
+create table project(
+projectid int primary key,
+project_status varchar(30),
+start_date date,
+end_date date
+);
+

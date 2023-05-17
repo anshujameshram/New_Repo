@@ -1,0 +1,12 @@
+Register
+Login
+dashboard
+Payment
+Feedback
+Transaction
+Admin
+Users
+Task assignment
+Task tracking
+Notifications
+Reporting
